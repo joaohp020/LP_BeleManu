@@ -134,11 +134,18 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: var(--white-bg-color);
 }
 
-.about-img {
+.about-img  img {
   width: 30vw;
+  border: 0.2rem solid var(--bg-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.about-img:hover img {
+  box-shadow: 0 0 1rem var(--bg-color);
+  transform: scale(1.02);
 }
 
 .heading {
@@ -146,16 +153,10 @@ span {
   font-size: 4.5rem;
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
 .about-content h2 {
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.4;
+  font-size: 3.2rem;
 }
 
 .about-content h3 {
@@ -258,11 +259,6 @@ span {
 }
 
 .product img {
-  /* width: 50%;
-  height: 300px;
-  object-fit: cover;
-  margin-top: 20px; */
-
   display: block;
   max-width: 100%;
   width: auto !important;
