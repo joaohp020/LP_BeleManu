@@ -49,6 +49,7 @@ span {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header :hover {
@@ -136,7 +137,7 @@ span {
   gap: 2rem;
 }
 
-.about-img  img {
+.about-img img {
   width: 30vw;
   border: 0.2rem solid var(--bg-color);
   border-radius: 0.8rem;
@@ -238,8 +239,26 @@ span {
   color: var(--bg-color);
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product h2 {
+  margin: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
 .product-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: var(--bg-color);

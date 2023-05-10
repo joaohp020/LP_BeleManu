@@ -34,6 +34,17 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".navbar").classList.add("scrolled");
+  } else {
+    document.querySelector(".navbar").classList.remove("scrolled");
+  }
+}
+
+
 ScrollReveal({
   reset: true,
   distance: "80px",
