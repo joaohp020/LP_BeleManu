@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #f7a3b5;
+  --bg-color: #ee7a68;
   --second-bg-color: #f5ecd1;
   --white-bg-color: #ffffff;
-  --text-color: #e5e5e5;
+  --text-color: #713b39;
   --energy-color: #b4d1c0;
 }
 
@@ -25,8 +25,8 @@ html {
 }
 
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background: var(--white-bg-color);
+  color: var(--bg-color);
 }
 
 section {
@@ -35,7 +35,7 @@ section {
 }
 
 span {
-  color: mediumvioletred;
+  color: var(--text-color);
 }
 
 .header {
@@ -44,7 +44,7 @@ span {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background-color: var(--bg-color);
+  background-color: var(--white-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@ span {
 }
 
 .header :hover {
-  border-bottom: mediumvioletred;
+  border-bottom: var(--bg-color);;
 }
 
 .header.sticky {
@@ -61,30 +61,30 @@ span {
 
 .logo {
   font-size: 2.5rem;
-  color: var(--text-color);
+  color: var(--bg-color);;
   font-weight: 600;
   cursor: default;
 }
 
 .navbar a {
   font-size: 1.7rem;
-  color: var(--text-color);
+  color: var(--bg-color);;
   margin-left: 4rem;
   transition: 0.3s;
 }
 
 .navbar a:hover {
-  color: mediumvioletred;
+  color: var(--bg-color);;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: mediumvioletred;
+  color: var(--bg-color);;
 }
 
 #menu-icon {
   font-size: 3.6rem;
-  color: var(--text-color);
+  color: var(--bg-color);;
   display: none;
 }
 
@@ -96,6 +96,14 @@ span {
 
 .home-img img {
   width: 30vw;
+  border: 0.2rem solid var(--bg-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.home-img:hover img {
+  box-shadow: 0 0 1rem var(--bg-color);
+  transform: scale(1.02);
 }
 
 .home-content h3 {
@@ -126,7 +134,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: var(--bg-color);
+  background: var(--white-bg-color);
 }
 
 .about-img {
@@ -170,18 +178,18 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid mediumvioletred;
+  border: 0.2rem solid var(--bg-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: mediumvioletred;
+  color: var(--bg-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media a:hover {
   background: var(--main-color);
-  color: mediumvioletred;
-  box-shadow: 0 0 1rem mediumvioletred;
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--bg-color);
 }
 
 .servicos h2 {
@@ -199,47 +207,47 @@ span {
 .servicos-container .servicos-box {
   margin-top: 90px;
   flex: 1 1 30rem;
-  background: var(--second-bg-color);
+  background: var(--white-bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid var(--energy-color);
+  border: 0.2rem solid;
   transition: 0.5s ease;
-  box-shadow: 0 0 1rem mediumvioletred;
+  box-shadow: 0 0 1rem var(--bg-color);
 }
 
 .servicos-container .servicos-box:hover {
-  border-color: mediumvioletred;
+  border-color: var(--bg-color);
   transform: scale(1.02);
 }
 
 .servicos-box i {
   font-size: 7rem;
-  color: mediumvioletred;
+  color: var(--bg-color);;
 }
 
 .servicos-box h3 {
   font-size: 2.6rem;
-  color: mediumvioletred;
+  color: var(--bg-color);;
 }
 
 .servicos-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
-  color: mediumvioletred;
+  color: var(--bg-color);;
 }
 
 .product-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: mediumvioletred;
+  color: var(--bg-color);;
 }
 
 .product-box {
   width: 70%;
-  background-color: var(--second-bg-color);
-  box-shadow: 0 0 5px mediumvioletred;
+  background-color: var(--white-bg-color);
+  box-shadow: 0 0 5px var(--bg-color);;
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
@@ -258,11 +266,13 @@ span {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .product p {
   margin-top: 10px;
   font-size: 1.6rem;
+  color: var(--text-color);
 }
 
 .product .preco {
@@ -276,10 +286,10 @@ span {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: var(--second-bg-color);
-  color: mediumvioletred;
+  background-color: var(--bg-color);
+  color: var(--white-bg-color);
   font-size: 16px;
-  border: 2px solid mediumvioletred;
+  border: 2px solid var(--bg-color);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -287,7 +297,7 @@ span {
 
 .product button:hover {
   /* background-color: var(--bg-color); */
-  box-shadow: 0 0 1.5rem mediumvioletred;
+  box-shadow: 0 0 1.5rem var(--bg-color);;
   transition: 0.5s;
 }
 
@@ -313,7 +323,7 @@ span {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: mediumvioletred;
+  color: var(--bg-color);;
   background-color: var(--second-bg-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
@@ -336,17 +346,17 @@ span {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--second-bg-color);
-  border: 2px solid mediumvioletred;
+  border: 2px solid var(--bg-color);;
   border-radius: 4rem;
   font-size: 1.6rem;
-  color: mediumvioletred;
+  color: var(--bg-color);;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
 }
 
 .btn:hover {
-  box-shadow: 0 0 1.5rem mediumvioletred;
+  box-shadow: 0 0 1.5rem var(--bg-color);;
 }
 
 #whatsapp-button {
