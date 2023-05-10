@@ -537,18 +537,37 @@ span {
 }
 
 @media (max-width: 365px) {
-  .home-img img {
+  /* .home-img img {
     width: 90vw;
+  } */
+
+  /* 
+  .about-img img {
+    display: flex;
+    width: 70vw;
+    position: relative;
+  } */
+
+  .about-content {
+    border: 0.1rem solid var(--bg-color);
+    border-radius: 8px;
+    padding: 2rem 5vh;
+    width: 100%;
+    font-size: 8vw;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
   }
 
-  .about-img img {
-    width: 90vw;
+  .servicos-box {
+    width: 100%;
+    max-width: 100%;
   }
 
   #whatsapp-button {
     position: fixed;
     bottom: 20px;
-    right: 55px;
+    right: 85px;
     z-index: 999;
   }
 
